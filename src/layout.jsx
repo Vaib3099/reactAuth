@@ -1,5 +1,13 @@
-export function layout(){
+import { AllRoutes } from "./components/AllRoutes";
+import { Footer } from "./components/Footer";
+import { NavBar } from "./components/NavBar";
+
+export function Layout(){
     return <>
-        <p>hello</p>
-    </>
+        <header className="">
+            <NavBar />
+            <AllRoutes />
+            <Footer />
+        </header>
+    </>;
 }
